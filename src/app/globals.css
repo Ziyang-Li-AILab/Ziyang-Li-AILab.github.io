@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #050505;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-linux-biolinum);
+}
+
+/* Elements marked with serif class or font-serif will use Linux Biolinum */
+.font-serif,
+.serif {
+  font-family: var(--font-linux-biolinum);
+}
+
+/* Elements marked with sans or font-sans will use Linux Biolinum K */
+.font-sans,
+.sans {
+  font-family: var(--font-linux-biolinum-k), var(--font-linux-biolinum), system-ui, sans-serif;
+}
